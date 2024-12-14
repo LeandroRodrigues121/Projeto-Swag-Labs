@@ -112,4 +112,21 @@ describe('Testes Funcional de Login', () => {
         cy.get('[data-test="product-sort-container"]').select('Price (high to low)')
     });
 
+
+    it('Ordenação de Produtos de A ate Z: ', () => {
+        cy.visit("https://www.saucedemo.com/")
+        cy.get('[data-test="username"]').type("standard_user")
+        cy.get('[data-test="password"]').type("secret_sauce")
+        cy.get('[data-test="login-button"]').click()
+        cy.get('[data-test="product-sort-container"]').select('Name (A to Z)')
+    });
+
+    it('Ordenação de Produtos de Z ate A: ', () => {
+        cy.visit("https://www.saucedemo.com/")
+        cy.get('[data-test="username"]').type("standard_user")
+        cy.get('[data-test="password"]').type("secret_sauce")
+        cy.get('[data-test="login-button"]').click()
+        cy.get('[data-test="product-sort-container"]').select('Name (Z to A)')
+    });
+
 });

@@ -1,3 +1,9 @@
+/**
+ * Elementos da página de produtos e carrinho
+ * Contém os seletores e valores associados às funcionalidades de produtos e carrinho
+ * na aplicação, centralizando os dados para facilitar a manutenção e reutilização.
+ */
+
 export const elements = {
         produto_1: ':nth-child(1) > [data-test="inventory-item-description"]',
         produto_2: ':nth-child(2) > [data-test="inventory-item-description"]',

@@ -129,4 +129,23 @@ describe('Testes Funcional de Login', () => {
         cy.get('[data-test="product-sort-container"]').select('Name (Z to A)')
     });
 
+    it('Consultar o Produto', () => {
+        cy.visit("https://www.saucedemo.com/")
+        cy.get('[data-test="username"]').type("standard_user")
+        cy.get('[data-test="password"]').type("secret_sauce")
+        cy.get('[data-test="login-button"]').click()
+        cy.get('[data-test="item-4-title-link"] > [data-test="inventory-item-name"]').click()
+        cy.get('[data-test="inventory-item-desc"]').should('contain','carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.')
+    });
+
+
+    it('Consultar o Produto e adicionar no carrinho', () => {
+        cy.visit("https://www.saucedemo.com/")
+        cy.get('[data-test="username"]').type("standard_user")
+        cy.get('[data-test="password"]').type("secret_sauce")
+        cy.get('[data-test="login-button"]').click()
+        cy.get('[data-test="item-4-title-link"] > [data-test="inventory-item-name"]').click()
+        cy.get('[data-test="add-to-cart"]').click()
+    });
+
 });

@@ -27,6 +27,12 @@ npx cypress open
 
 npx cypress run
 
+##Logo abaixo com tem a documentação dos casos de teste usando o BDD ##
+
+[Testes Funcionais do Carrinho de Compras.pdf](https://github.com/user-attachments/files/18137665/Testes.Funcionais.do.Carrinho.de.Compras.pdf)
+[Feature_ Testes Funcionais na Página Home.pdf](https://github.com/user-attachments/files/18137664/Feature_.Testes.Funcionais.na.Pagina.Home.pdf)
+[Testes Funcionais de Login.pdf](https://github.com/user-attachments/files/18137663/Testes.Funcionais.de.Login.pdf)
+
 ###Cenários de Testes####
 Os testes no projeto cobrem os seguintes cenários principais:
 

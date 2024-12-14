@@ -2,7 +2,7 @@
 
 Este projeto foi desenvolvido para garantir a qualidade e a funcionalidade da aplicação **Sauce Demo**, uma plataforma de e-commerce fictícia utilizada para testar automação de testes. A aplicação oferece um ambiente ideal para realizar testes de ponta a ponta, como login, gerenciamento de carrinho de compras e finalização de pedidos.
 
-Com o objetivo de validar as funcionalidades principais do site, foram implementados testes automatizados utilizando **Cypress**, uma poderosa ferramenta para automação de testes E2E (end-to-end). Os testes garantem que o fluxo de compra, login de usuários, adição e remoção de produtos do carrinho, bem como a ordenação dos produtos, funcionem corretamente. Este projeto visa melhorar a eficiência do processo de QA, proporcionando uma maneira rápida e confiável de detectar regressões e falhas.
+Com o objetivo de validar as funcionalidades principais do site, foram implementados testes automatizados utilizando **Cypress**, uma ferramenta para automação de testes E2E (end-to-end). Os testes garantem que o fluxo de compra, login de usuários, adição e remoção de produtos do carrinho, bem como a ordenação dos produtos, funcionem corretamente. Este projeto visa melhorar a eficiência do processo de QA, proporcionando uma maneira rápida e confiável de detectar regressões e falhas.
 
 ## Tecnologias Utilizadas
 
@@ -27,7 +27,7 @@ npx cypress open
 
 npx cypress run
 
-##Logo abaixo com tem a documentação dos casos de teste usando o BDD ##
+##Logo abaixo contem a documentação dos casos de teste usando o BDD ##
 
 [Testes Funcionais do Carrinho de Compras.pdf](https://github.com/user-attachments/files/18137665/Testes.Funcionais.do.Carrinho.de.Compras.pdf)
 [Feature_ Testes Funcionais na Página Home.pdf](https://github.com/user-attachments/files/18137664/Feature_.Testes.Funcionais.na.Pagina.Home.pdf)

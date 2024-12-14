@@ -148,4 +148,24 @@ describe('Testes Funcional de Login', () => {
         cy.get('[data-test="add-to-cart"]').click()
     });
 
+    it('Consultar o Produto e adicionar no carrinho e visualizar o carrinho', () => {
+        cy.visit("https://www.saucedemo.com/")
+        cy.get('[data-test="username"]').type("standard_user")
+        cy.get('[data-test="password"]').type("secret_sauce")
+        cy.get('[data-test="login-button"]').click()
+        cy.get('[data-test="item-4-title-link"] > [data-test="inventory-item-name"]').click()
+        cy.get('[data-test="add-to-cart"]').click()
+        cy.get('[data-test="shopping-cart-link"]').click()
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Backpack')
+    });
+
+    it('Voltar para a tela de listagem ', () => {
+        cy.visit("https://www.saucedemo.com/")
+        cy.get('[data-test="username"]').type("standard_user")
+        cy.get('[data-test="password"]').type("secret_sauce")
+        cy.get('[data-test="login-button"]').click()
+        cy.get('[data-test="item-4-title-link"] > [data-test="inventory-item-name"]').click()
+        cy.get('[data-test="back-to-products"]').click()
+    });
+
 });

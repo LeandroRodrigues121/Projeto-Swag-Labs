@@ -96,4 +96,20 @@ describe('Testes Funcional de Login', () => {
         cy.get('[data-test="complete-text"]').should("contain",'Your order has been dispatched, and will arrive just as fast as the pony can get there!')
     });
 
+    it('Ordenação de Produtos de  menor para maior valor: ', () => {
+        cy.visit("https://www.saucedemo.com/")
+        cy.get('[data-test="username"]').type("standard_user")
+        cy.get('[data-test="password"]').type("secret_sauce")
+        cy.get('[data-test="login-button"]').click()
+        cy.get('[data-test="product-sort-container"]').select('Price (low to high)')
+    });
+
+    it('Ordenação de Produtos do maior para o menor valor: ', () => {
+        cy.visit("https://www.saucedemo.com/")
+        cy.get('[data-test="username"]').type("standard_user")
+        cy.get('[data-test="password"]').type("secret_sauce")
+        cy.get('[data-test="login-button"]').click()
+        cy.get('[data-test="product-sort-container"]').select('Price (high to low)')
+    });
+
 });
